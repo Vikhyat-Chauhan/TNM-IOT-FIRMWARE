@@ -9,25 +9,30 @@
 # vscode setting
 .vscode
 
+# Firmware project files
+firmware/**/sdkconfig
+firmware/**/sdkconfig.old
+firmware/**/build
+
 # Example project files
-examples/**/sdkconfig
-examples/**/sdkconfig.old
-examples/**/build
+ESP8266_RTOS_SDK/examples/**/sdkconfig
+ESP8266_RTOS_SDK/examples/**/sdkconfig.old
+ESP8266_RTOS_SDK/examples/**/build
 
 # Unit test app files
-tools/unit-test-app/sdkconfig
-tools/unit-test-app/sdkconfig.old
-tools/unit-test-app/build
+ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig
+ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig.old
+ESP8266_RTOS_SDK/tools/unit-test-app/build
 
 # Doc build artifacts
-docs/*/_build/
-docs/*/doxygen-warning-log.txt
-docs/*/sphinx-warning-log.txt
-docs/*/sphinx-warning-log-sanitized.txt
-docs/*/xml/
-docs/*/xml_in/
-docs/*/man/
-docs/doxygen_sqlite3.db
+ESP8266_RTOS_SDK/docs/*/_build/
+ESP8266_RTOS_SDK/docs/*/doxygen-warning-log.txt
+ESP8266_RTOS_SDK/docs/*/sphinx-warning-log.txt
+ESP8266_RTOS_SDK/docs/*/sphinx-warning-log-sanitized.txt
+ESP8266_RTOS_SDK/docs/*/xml/
+ESP8266_RTOS_SDK/docs/*/xml_in/
+ESP8266_RTOS_SDK/docs/*/man/
+ESP8266_RTOS_SDK/docs/doxygen_sqlite3.db
 
 # emacs
 .dir-locals.el
