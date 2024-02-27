@@ -1,0 +1,69 @@
+menu "TNM Firmware Configuration"
+    config MODEL_NAME
+        string "Master Model Name"
+        default "MASTERWIFI12T"
+        help
+            The Model number for this Firmware.
+    
+    config MODEL_VERSION
+        string "Master Model Version"
+        default "20.0"
+        help
+            The Model version for this Firmware.
+            
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config MULTI_WIFI_LIST
+        int "Saved Wifi Credentials"
+        default 2
+        help
+            The maximum number of wifi credentials that will be saved on the device.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+    config RELAY_MAX_NUMBER
+        int "Maximum Relay Number"
+        default 5
+        help
+            Set the Maximum relay number that this master supports from its slave, it actually defines the arrays used for storage.
+
+    config FAN_MAX_NUMBER
+    int "Maximum Fan Number"
+    default 5
+    help
+        Set the Maximum fan number that this master supports from its slave, it actually defines the arrays used for storage.
+
+    config BUTTON_MAX_NUMBER
+    int "Maximum Button Number"
+    default 1
+    help
+        Set the Maximum button number that this master supports from its slave, it actually defines the arrays used for storage.
+    
+    config SENSOR_MAX_NUMBER
+    int "Maximum Sensor Number"
+    default 1
+    help
+        Set the Maximum sensor number that this master supports from its slave, it actually defines the arrays used for storage.
+
+    config TIMER_NUMBER
+    int "Number of Timers"
+    default 5
+    help
+        Timer instances allocated to each endpoint, like relay, fan etc.
+
+
+endmenu
