@@ -12,6 +12,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <slave.h>
+#include <sys/types.h>
 
 /* These are added from the configuration menu
 
@@ -21,13 +22,13 @@
 #ifdef CONFIG_MODEL_NAME
 #define MODEL_NAME CONFIG_MODEL_NAME
 #else
-#define MODEL_NAME "MASTERWIFI12T"
+#define MODEL_NAME ""
 #endif
 
 #ifdef CONFIG_MODEL_VERSION
 #define MODEL_VERSION CONFIG_MODEL_VERSION
 #else
-#define MODEL_VERSION "1.0"
+#define MODEL_VERSION ""
 #endif
 
 #ifdef CONFIG_MULTI_WIFI_LIST
@@ -39,6 +40,7 @@
 typedef struct{
   //Time Sensor Variables
   int8_t date,month,year,week,hour,minute,second;
+  time_t epochtime;
   //Time Sensor Variables
   int8_t temp;
   int8_t error_code;
@@ -78,6 +80,8 @@ typedef struct{
 typedef struct{
     char* NAME;
     char* VERSION;
+    char* CHIPID;
+    char* MQTTCLIENTID;
     bool change;
     SYSTEM system;
     SLAVE slave;

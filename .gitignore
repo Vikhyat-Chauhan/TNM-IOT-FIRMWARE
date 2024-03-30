@@ -15,24 +15,29 @@ firmware/**/sdkconfig.old
 firmware/**/build
 
 # Example project files
-ESP8266_RTOS_SDK/examples/**/sdkconfig
-ESP8266_RTOS_SDK/examples/**/sdkconfig.old
-ESP8266_RTOS_SDK/examples/**/build
+examples/**/sdkconfig
+examples/**/sdkconfig.old
+examples/**/build
+
+# Example project files
+dependencies/ESP8266_RTOS_SDK/examples/**/sdkconfig
+dependencies/ESP8266_RTOS_SDK/examples/**/sdkconfig.old
+dependencies/ESP8266_RTOS_SDK/examples/**/build
 
 # Unit test app files
-ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig
-ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig.old
-ESP8266_RTOS_SDK/tools/unit-test-app/build
+dependencies/ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig
+dependencies/ESP8266_RTOS_SDK/tools/unit-test-app/sdkconfig.old
+dependencies/ESP8266_RTOS_SDK/tools/unit-test-app/build
 
 # Doc build artifacts
-ESP8266_RTOS_SDK/docs/*/_build/
-ESP8266_RTOS_SDK/docs/*/doxygen-warning-log.txt
-ESP8266_RTOS_SDK/docs/*/sphinx-warning-log.txt
-ESP8266_RTOS_SDK/docs/*/sphinx-warning-log-sanitized.txt
-ESP8266_RTOS_SDK/docs/*/xml/
-ESP8266_RTOS_SDK/docs/*/xml_in/
-ESP8266_RTOS_SDK/docs/*/man/
-ESP8266_RTOS_SDK/docs/doxygen_sqlite3.db
+dependencies/ESP8266_RTOS_SDK/docs/*/_build/
+dependencies/ESP8266_RTOS_SDK/docs/*/doxygen-warning-log.txt
+dependencies/ESP8266_RTOS_SDK/docs/*/sphinx-warning-log.txt
+dependencies/ESP8266_RTOS_SDK/docs/*/sphinx-warning-log-sanitized.txt
+dependencies/ESP8266_RTOS_SDK/docs/*/xml/
+dependencies/ESP8266_RTOS_SDK/docs/*/xml_in/
+dependencies/ESP8266_RTOS_SDK/docs/*/man/
+dependencies/ESP8266_RTOS_SDK/docs/doxygen_sqlite3.db
 
 # emacs
 .dir-locals.el

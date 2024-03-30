@@ -9,6 +9,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <master.h>
+#include <system.h>
 
 /**
  * Initializes @p clock with default values and the function returns the value
